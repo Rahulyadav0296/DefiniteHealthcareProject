@@ -1,0 +1,74 @@
+.workflow-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.workflow-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.workflow-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.workflow-icon {
+  cursor: pointer;
+  color: #495057;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #007bff;
+  }
+}
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.react-calendar {
+  border: none;
+  width: 100%;
+  max-width: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  &__tile {
+    max-width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    color: #333;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  &__month-view__days__day--selected {
+    background-color: #1976d2;
+    color: white;
+
+    &:hover {
+      background-color: #1565c0;
+    }
+  }
+
+  &__tile--now {
+    background-color: #e3f2fd;
+    color: #1976d2;
+  }
+}

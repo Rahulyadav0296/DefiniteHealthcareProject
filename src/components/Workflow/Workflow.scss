@@ -1,0 +1,26 @@
+.workflow-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.workflow-steps {
+  margin-top: 20px;
+}
+
+.workflow-step {
+  background-color: #f3e9e9;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 280px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-step-icon {
+  color: #28a745;
+}

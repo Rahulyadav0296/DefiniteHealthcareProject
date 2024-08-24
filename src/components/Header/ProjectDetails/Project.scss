@@ -1,10 +1,7 @@
 .container {
   display: flex;
-  // margin: 10px;
-  // border-radius: 15px;
   justify-content: space-between; // Space between left and right sections
-  padding: 20px; // Padding around the container
-  // Light background for the container
+  padding: 20px;
 }
 
 .info-section {
@@ -45,4 +42,18 @@
   align-items: center;
   justify-content: flex-end; // Align rows info to the right
   flex-shrink: 0; // Prevent shrinking
+}
+
+@media (max-width: 1153px) {
+  .container {
+    display: flex;
+    justify-content: space-between; // Space between left and right sections
+    padding: 20px;
+  }
+
+  .info-section {
+    display: flex;
+    flex-direction: column; // Stack items vertically
+    gap: 10px; // Space between items
+  }
 }

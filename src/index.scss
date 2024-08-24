@@ -1,11 +1,20 @@
 .header-workflow {
   display: flex;
   height: 100vh;
-  background-color: bisque;
+  background-color: white;
   justify-content: space-between;
 
   .workflow {
     flex: 1;
     background-color: #ddd;
+  }
+}
+
+@media (max-width: 1153px) {
+  .header-workflow {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
   }
 }

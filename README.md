@@ -5,7 +5,7 @@ Currently, two official plugins are available:
 
 @vitejs/plugin-react uses Babel for Fast Refresh.
 @vitejs/plugin-react-swc uses SWC for Fast Refresh.
-The deployed project can be viewed at: Deployed Project Link
+The deployed project can be viewed at: https://66c9fec404cb7008428ffed3--harmonious-tiramisu-660fff.netlify.app/
 
 To install the project dependencies, run:
 

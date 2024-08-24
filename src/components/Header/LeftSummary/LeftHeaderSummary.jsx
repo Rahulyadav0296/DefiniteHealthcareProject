@@ -8,19 +8,32 @@ import "./LeftHeaderSummary.scss";
 function LeftHeaderSummary() {
   return (
     <div className="header-left-summary">
-      <NavLink to="/">
+      <NavLink
+        to="/"
+        style={{ textDecoration: "none" }}
+        className={({ isActive }) => (isActive ? "active" : "")}
+        end
+      >
         <button className="header-data">
           <SettingsIcon />
           Data
         </button>
       </NavLink>
-      <NavLink to="/summary">
+      <NavLink
+        style={{ textDecoration: "none" }}
+        to="/summary"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
         <button className="header-summary-static">
           <SignalCellularAltIcon />
           Summary
         </button>
       </NavLink>
-      <NavLink to="/logs">
+      <NavLink
+        style={{ textDecoration: "none" }}
+        to="/logs"
+        className={({ isActive }) => (isActive ? "active" : "")}
+      >
         <button className="header-logs">
           <ArticleIcon />
           Logs

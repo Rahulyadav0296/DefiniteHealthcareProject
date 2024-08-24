@@ -6,6 +6,7 @@
   button {
     display: flex;
     margin-left: 10px;
+    text-decoration: none;
     margin-top: 10px;
     align-items: center;
     background-color: #ffffff; // White background
@@ -25,5 +26,13 @@
     svg {
       margin-right: 8px; // Space between icon and text
     }
+  }
+
+  .active .header-data,
+  .active .header-summary-static,
+  .active .header-logs {
+    background-color: purple; /* Active background color */
+    color: #fff; /* Change text color to white */
+    text-decoration: none; /* Ensure no underline */
   }
 }

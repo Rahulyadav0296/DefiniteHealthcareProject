@@ -47,13 +47,20 @@
 @media (max-width: 1153px) {
   .container {
     display: flex;
-    justify-content: space-between; // Space between left and right sections
+    flex-direction: column;
+    justify-content: center; // Space between left and right sections
     padding: 20px;
   }
 
   .info-section {
     display: flex;
+    justify-content: left;
     flex-direction: column; // Stack items vertically
     gap: 10px; // Space between items
+  }
+  .rows-info {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
   }
 }

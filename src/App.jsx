@@ -1,25 +1,38 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Data from "./components/Data/Data";
+import Header from "./components/Header/Header";
 import Logs from "./components/Logs/Logs";
 import Summary from "./components/Summary/Summary";
 import ErrorPage from "./pages/Error/ErrorPage";
-import Home from "./pages/Home/Home";
+
+const RootLayer = () => {
+  return (
+    <>
+      <Header /> {/* Header remains the same for all routes */}
+    </>
+  );
+};
 
 const router = createBrowserRouter([
   {
     path: "/",
     errorElement: <ErrorPage />,
-    element: <Home />,
-  },
-  {
-    path: "/summary",
-    errorElement: <ErrorPage />,
-    element: <Summary />,
-  },
-  {
-    path: "/logs",
-    errorElement: <ErrorPage />,
-    element: <Logs />,
+    element: <RootLayer />,
+    children: [
+      {
+        path: "",
+        element: <Data />,
+      },
+      {
+        path: "summary",
+        element: <Summary />,
+      },
+      {
+        path: "logs",
+        element: <Logs />,
+      },
+    ],
   },
 ]);
 

@@ -1,0 +1,29 @@
+.header-left-summary {
+  display: flex;
+  gap: 10px; // Space between buttons
+  align-items: center; // Vertically align items in the center
+
+  button {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 10px;
+    align-items: center;
+    background-color: #ffffff; // White background
+    border: 1px solid #ced4da; // Border color
+    border-radius: 4px; // Rounded corners
+    padding: 8px 12px; // Padding inside the button
+    font-size: 14px; // Font size
+    color: #495057; // Text color
+    cursor: pointer; // Pointer cursor on hover
+    transition: background-color 0.3s ease, border-color 0.3s ease; // Smooth transition for hover effects
+
+    &:hover {
+      background-color: #f1f3f5; // Light grey background on hover
+      border-color: #adb5bd; // Darker border color on hover
+    }
+
+    svg {
+      margin-right: 8px; // Space between icon and text
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header-workflow {
+  display: flex;
+  height: 100vh;
+  background-color: bisque;
+  justify-content: space-between;
+
+  .workflow {
+    flex: 1;
+    background-color: #ddd;
+  }
+}
